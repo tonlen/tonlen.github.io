@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>len&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="len's blog">
+<meta property="og:url" content="http://letout.cc/index.html">
+<meta property="og:site_name" content="len's blog">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="len's blog">
+<meta name="twitter:description">
+  
+    <link rel="alternate" href="/atom.xml" title="len&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">len&#39;s blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">个人学习博客</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://letout.cc"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-常用目录结构" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/01/常用目录结构/" class="article-date">
+  <time datetime="2016-04-01T03:02:41.000Z" itemprop="datePublished">2016-04-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/01/常用目录结构/">常用目录结构</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><ul>
+<li>AppDelegate</li>
+<li>Models</li>
+<li>Macro</li>
+<li>General</li>
+<li>Helpers</li>
+<li>Vendors</li>
+<li>Sections</li>
+<li>Resources</li>
+</ul>
+<p>一个合理的目录结构首先应该是清晰的，让人一眼看上去就能大概了解目录的职责，且容易应对新的变化。</p>
+<h2 id="AppDelegate"><a href="#AppDelegate" class="headerlink" title="AppDelegate"></a>AppDelegate</h2><p>这个目录下放的是<strong>AppDelegate.h(.m)</strong>文件，是整个应用的入口文件，所以单独拿出来。</p>
+<h2 id="Models"><a href="#Models" class="headerlink" title="Models"></a>Models</h2><p>这个目录下放一些与数据相关的<em>Model</em>文件，里面大概是这样：</p>
+<pre><code>Models
+|- BaseModel.h
+|- BaseModel.m
+|- CollectionModel.h
+|- CollectionModel.m
+...
+</code></pre><h2 id="Macro"><a href="#Macro" class="headerlink" title="Macro"></a>Macro</h2><p>这个目录下放了整个应用会用到的宏定义，里面大概是这样：</p>
+<pre><code>Macro
+|- AppMacro.h
+|- NotificationMacro.h
+|- VendorMacro.h
+|- UtilsMacro.h
+...
+</code></pre><p><em>AppMacro.h</em> 里放app相关的宏定义，如:</p>
+<p>表情相关</p>
+<pre><code>#define EMOTION_CACHE_PATH @&quot;cachedemotions&quot;
+#define EMOTION_RECENT_USED @&quot;recentusedemotions&quot;
+#define EMOTION_CATEGORIES @&quot;categoryemotions&quot;
+#define EMOTION_TOPICS @&quot;emotiontopics&quot;
+</code></pre><p>收藏相关</p>
+<pre><code>#define COLLECT_CACHE_PATH @&quot;collected&quot;
+</code></pre><p>配图相关</p>
+<pre><code>#define WATERFALL_ITEM_HEIGHT_MAX 300
+#define WATERFALL_ITEM_WIDTH 146
+</code></pre><p><em>NotificationMacro.h</em> 里放的是通知相关的宏定义。</p>
+<p><em>UtilsMacro.h</em> 里放的是一些方便使用的宏定义，如：</p>
+<pre><code>#define UIColorFromRGB(r,g,b) [UIColor \
+colorWithRed:r/255.0 \
+green:g/255.0 \
+blue:b/255.0 alpha:1]
+
+#define NSStringFromInt(intValue) [NSString stringWithFormat:@&quot;%d&quot;,intValue]
+</code></pre><p><em>VendorMacro.h</em> 里放一些第三方常量，如：</p>
+<pre><code>#define UMENG_KEY @&quot;xxxxx&quot;
+#define UMENG_CHANNEL_ID @&quot;xxx&quot;
+</code></pre><p>如果有新的类型的宏定义，可以再新建一个相关的Macro.h。</p>
+<h2 id="General"><a href="#General" class="headerlink" title="General"></a>General</h2><p>这个目录放会被重用的Views/Classes和Categories。里面大概是这样：</p>
+<pre><code>General
+|- Views
+    |- TPKScollView
+    |- TPKPullToRefresh
+    ...
+|- Classes
+    |- TPKBaseViewController
+    |- TPKHorizontalView
+    ...
+| - Categories
+    |- UIViewController+Sizzle
+    |- UIImageView+Downloader
+    ...
+</code></pre><p>这里的TPK是项目的首字母缩写。</p>
+<h2 id="Helpers"><a href="#Helpers" class="headerlink" title="Helpers"></a>Helpers</h2><p>这个目录放一些助手类，文件名与功能挂钩。里面大概是这样：</p>
+<pre><code>Helpers
+|- TPKShareHelper
+|- TPDBHelper
+|- TPKEmotionHelper
+...
+</code></pre><p>助手类的主要作用是帮助Controller瘦身，也可以提供一定程度的复用。</p>
+<h2 id="Vendors"><a href="#Vendors" class="headerlink" title="Vendors"></a>Vendors</h2><p>这个目录放第三方的类库/SDK，如UMeng、WeiboSDK、WeixinSDK等等。</p>
+<h2 id="Sections"><a href="#Sections" class="headerlink" title="Sections"></a>Sections</h2><p>这个目录下面的文件对应的是app的具体单元，如导航、瀑布流等等。里面大概是这样：</p>
+<pre><code>Sections
+|- Menu
+|- Setting
+|- Collection
+...
+</code></pre><h2 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h2><p>这个目录下放的是app会用到的一些资源，主要是图片。</p>
+<h2 id="Cocoapods"><a href="#Cocoapods" class="headerlink" title="Cocoapods"></a>Cocoapods</h2><ul>
+<li><p>业务无关的类库可以通过 Cocoapods 来方便地管理，如SDWebImage, Reachability等等。还有一些是多个应用都会用到的基础模块，比如HBAPI、HBSNS 、HBFoundation（HB为公司名首字母）等等，可以建一个私有的git repo，然后加到podfile中，这样如果HBAPI有更新，只需要pod update一下就行了。</p>
+</li>
+<li><p>顺便说一下HBFoundation，这个git仓库中可以放一些自己写的所有应用基本上都会用到的小模块。如很多app都会有隔一段时间跳出一个求好评的alertView，就可以写一个HBRating类，这样需要使用该功能的app只需加上一句：[HBRating checkIfShouldPopupWithAppID:(NSInteger)appID]就行了。又比如app都有接受push notification的需求，可以写一个HBAPNS类，等等。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://letout.cc/2016/04/01/常用目录结构/" data-id="cimh4sqff0001npviwf4t4ouf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-GCD的使用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/01/GCD的使用/" class="article-date">
+  <time datetime="2016-04-01T02:48:30.000Z" itemprop="datePublished">2016-04-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/01/GCD的使用/">GCD的使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://letout.cc/2016/04/01/GCD的使用/" data-id="cimh4sqf80000npvilhct7zl5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Arkiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Siste innlegg</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/04/01/常用目录结构/">常用目录结构</a>
+          </li>
+        
+          <li>
+            <a href="/2016/04/01/GCD的使用/">GCD的使用</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
