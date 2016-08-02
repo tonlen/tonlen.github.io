@@ -1,2 +1,247 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><title>len's blog</title><link rel="stylesheet" href="/css/layout.css">
-<link rel="stylesheet" href="/css/main.css"><link rel="shortcut icon" href="/img/favicon.png"></head><body><header class="base-menu"><div class="menu-wrapper"><div class="menu-layout-bg"></div><nav class="menu-content"><ul class="menu-list"><li class="menu-item"><a href="/" class="menu-link">len's blog</a></li><li class="menu-item"><a href="/blog/archives" class="menu-link">Archives</a></li><li class="menu-item"><a href="/about" class="menu-link">About</a></li></ul></nav></div></header><header class="base-mobile-menu"><div class="mobile-menu-wrapper"><div class="menu-layout-bg"></div><nav class="menu-content"><ul class="menu-list"><li class="menu-item"><a href="/" class="menu-link">len's blog</a></li><li class="menu-item"><a href="/blog/archives" class="menu-link">Archives</a></li><li class="menu-item"><a href="/about" class="menu-link">About</a></li></ul></nav><div id="mobile-menu-toggle" class="toggle-menu"><span class="menu-bar"></span><span class="menu-bar"> </span><span class="menu-bar"></span></div></div></header><div class="base-content"><div class="base-content-main"><div class="post-list-wrapper"><article class="article-item"><h2 class="article-title-wrapper"><a href="/2016/04/01/常用目录结构" target="_blank" class="title-link">常用目录结构</a></h2><div class="article-meta"><p class="meta-item meta-time"><span class="meta-item-title">发表于: </span>2016-04-01</p><p class="meta-item meta-category"></p></div><div class="article-excerpt"></div><div class="article-read-more"><a href="/2016/04/01/常用目录结构/" class="read-more-link">Read more</a></div></article><article class="article-item"><h2 class="article-title-wrapper"><a href="/2016/04/01/GCD的使用" target="_blank" class="title-link">GCD的使用</a></h2><div class="article-meta"><p class="meta-item meta-time"><span class="meta-item-title">发表于: </span>2016-04-01</p><p class="meta-item meta-category"></p></div><div class="article-excerpt"></div><div class="article-read-more"><a href="/2016/04/01/GCD的使用/" class="read-more-link">Read more</a></div></article></div><div id="base-discus"></div></div></div><footer class="base-footer"><div class="footer-wrapper"><span>tang peng Using </span><a href="https://github.com/chuguixin/Simple"><span>Simple</span></a><span> Presents For You.</span></div></footer><div class="dom-ready"><script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script><script src="/js/base.js"></script></div></body></html>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>len&#39;s blog | 个人学习博客</title>
+  <meta name="author" content="tang peng">
+  
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  
+  <meta property="og:site_name" content="len&#39;s blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="len&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div id="page" class="site">
+  <div id="primary" class="content-area">
+
+    <header id="header" class="inner"><div class="site-branding">
+  <h1 class="site-title">
+    <a href="/">len&#39;s blog</a>
+  </h1>
+  <p class="site-description">个人学习博客</p>
+</div>
+<nav id="site-navigation" class="main-navigation" role="navigation">
+  <ul>
+    
+      <li><a href="/">主页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+  </ul>
+</nav></header>
+
+    <article id="content" class="site-content">
+      <main id="main" class="site-main posts-loop" role="main">
+        
+  <article class="post article">
+
+  
+  
+    <h3 class="article-title"><a href="/2016/04/01/常用目录结构/"><span>常用目录结构</span></a></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2016/04/01/常用目录结构/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-04-01T03:02:41.000Z">
+          2016-04-01
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><ul>
+<li>AppDelegate</li>
+<li>Models</li>
+<li>Macro</li>
+<li>General</li>
+<li>Helpers</li>
+<li>Vendors</li>
+<li>Sections</li>
+<li>Resources</li>
+</ul>
+<p>一个合理的目录结构首先应该是清晰的，让人一眼看上去就能大概了解目录的职责，且容易应对新的变化。</p>
+<h2 id="AppDelegate"><a href="#AppDelegate" class="headerlink" title="AppDelegate"></a>AppDelegate</h2><p>这个目录下放的是<strong>AppDelegate.h(.m)</strong>文件，是整个应用的入口文件，所以单独拿出来。</p>
+<h2 id="Models"><a href="#Models" class="headerlink" title="Models"></a>Models</h2><p>这个目录下放一些与数据相关的<em>Model</em>文件，里面大概是这样：</p>
+<pre><code>Models
+|- BaseModel.h
+|- BaseModel.m
+|- CollectionModel.h
+|- CollectionModel.m
+...
+</code></pre><h2 id="Macro"><a href="#Macro" class="headerlink" title="Macro"></a>Macro</h2><p>这个目录下放了整个应用会用到的宏定义，里面大概是这样：</p>
+<pre><code>Macro
+|- AppMacro.h
+|- NotificationMacro.h
+|- VendorMacro.h
+|- UtilsMacro.h
+...
+</code></pre><p><em>AppMacro.h</em> 里放app相关的宏定义，如:</p>
+<p>表情相关</p>
+<pre><code>#define EMOTION_CACHE_PATH @&quot;cachedemotions&quot;
+#define EMOTION_RECENT_USED @&quot;recentusedemotions&quot;
+#define EMOTION_CATEGORIES @&quot;categoryemotions&quot;
+#define EMOTION_TOPICS @&quot;emotiontopics&quot;
+</code></pre><p>收藏相关</p>
+<pre><code>#define COLLECT_CACHE_PATH @&quot;collected&quot;
+</code></pre><p>配图相关</p>
+<pre><code>#define WATERFALL_ITEM_HEIGHT_MAX 300
+#define WATERFALL_ITEM_WIDTH 146
+</code></pre><p><em>NotificationMacro.h</em> 里放的是通知相关的宏定义。</p>
+<p><em>UtilsMacro.h</em> 里放的是一些方便使用的宏定义，如：</p>
+<pre><code>#define UIColorFromRGB(r,g,b) [UIColor \
+colorWithRed:r/255.0 \
+green:g/255.0 \
+blue:b/255.0 alpha:1]
+
+#define NSStringFromInt(intValue) [NSString stringWithFormat:@&quot;%d&quot;,intValue]
+</code></pre><p><em>VendorMacro.h</em> 里放一些第三方常量，如：</p>
+<pre><code>#define UMENG_KEY @&quot;xxxxx&quot;
+#define UMENG_CHANNEL_ID @&quot;xxx&quot;
+</code></pre><p>如果有新的类型的宏定义，可以再新建一个相关的Macro.h。</p>
+<h2 id="General"><a href="#General" class="headerlink" title="General"></a>General</h2><p>这个目录放会被重用的Views/Classes和Categories。里面大概是这样：</p>
+<pre><code>General
+|- Views
+    |- TPKScollView
+    |- TPKPullToRefresh
+    ...
+|- Classes
+    |- TPKBaseViewController
+    |- TPKHorizontalView
+    ...
+| - Categories
+    |- UIViewController+Sizzle
+    |- UIImageView+Downloader
+    ...
+</code></pre><p>这里的TPK是项目的首字母缩写。</p>
+<h2 id="Helpers"><a href="#Helpers" class="headerlink" title="Helpers"></a>Helpers</h2><p>这个目录放一些助手类，文件名与功能挂钩。里面大概是这样：</p>
+<pre><code>Helpers
+|- TPKShareHelper
+|- TPDBHelper
+|- TPKEmotionHelper
+...
+</code></pre><p>助手类的主要作用是帮助Controller瘦身，也可以提供一定程度的复用。</p>
+<h2 id="Vendors"><a href="#Vendors" class="headerlink" title="Vendors"></a>Vendors</h2><p>这个目录放第三方的类库/SDK，如UMeng、WeiboSDK、WeixinSDK等等。</p>
+<h2 id="Sections"><a href="#Sections" class="headerlink" title="Sections"></a>Sections</h2><p>这个目录下面的文件对应的是app的具体单元，如导航、瀑布流等等。里面大概是这样：</p>
+<pre><code>Sections
+|- Menu
+|- Setting
+|- Collection
+...
+</code></pre><h2 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h2><p>这个目录下放的是app会用到的一些资源，主要是图片。</p>
+<h2 id="Cocoapods"><a href="#Cocoapods" class="headerlink" title="Cocoapods"></a>Cocoapods</h2><ul>
+<li><p>业务无关的类库可以通过 Cocoapods 来方便地管理，如SDWebImage, Reachability等等。还有一些是多个应用都会用到的基础模块，比如HBAPI、HBSNS 、HBFoundation（HB为公司名首字母）等等，可以建一个私有的git repo，然后加到podfile中，这样如果HBAPI有更新，只需要pod update一下就行了。</p>
+</li>
+<li><p>顺便说一下HBFoundation，这个git仓库中可以放一些自己写的所有应用基本上都会用到的小模块。如很多app都会有隔一段时间跳出一个求好评的alertView，就可以写一个HBRating类，这样需要使用该功能的app只需加上一句：[HBRating checkIfShouldPopupWithAppID:(NSInteger)appID]就行了。又比如app都有接受push notification的需求，可以写一个HBAPNS类，等等。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          <span class="post-categories">
+            <i class="icon-categories"></i>
+            
+          </span>
+          <span class="post-tags">
+            <i class="icon-tags"></i>
+            
+          </span>
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+
+  <article class="post article">
+
+  
+  
+    <h3 class="article-title"><a href="/2016/04/01/GCD中的信号量/"><span>GCD学习：信号量</span></a></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2016/04/01/GCD中的信号量/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-04-01T02:48:30.000Z">
+          2016-04-01
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>在GCD中有三个函数是semaphore的操作，分别是：<br>dispatch_semaphore_create　　　创建一个semaphore<br>dispatch_semaphore_signal　　　发送一个信号<br>dispatch_semaphore_wait　　　　等待信号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dispatch_semaphore_t sema = dispatch_semaphore_create(0); </span><br><span class="line">dispatch_semaphore_signal(sema); </span><br><span class="line">dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          <span class="post-categories">
+            <i class="icon-categories"></i>
+            
+          </span>
+          <span class="post-tags">
+            <i class="icon-tags"></i>
+            
+          </span>
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+<nav class="pagination">
+  
+  
+</nav>
+      </main>
+    </article>
+
+    <footer id="colophon" class="site-footer" role="contentinfo"><div class="site-info">
+  <p class="meta">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2016 tang peng
+    
+  </p>
+</div></footer>
+    
+  </div>
+</div>
+</body>
+</html>

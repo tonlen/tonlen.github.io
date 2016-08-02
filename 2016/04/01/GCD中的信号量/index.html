@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>GCD学习：信号量 | len&#39;s blog | 个人学习博客</title>
+  <meta name="author" content="tang peng">
+  
+  <meta name="description" content="在GCD中有三个函数是semaphore的操作，分别是：dispatch_semaphore_create　　　创建一个semaphoredispatch_semaphore_signal　　　发送一个信号dispatch_semaphore_wait　　　　等待信号
+123dispatch_sem">
+  
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="GCD学习：信号量"/>
+  <meta property="og:site_name" content="len&#39;s blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="len&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div id="page" class="site">
+  <div id="primary" class="content-area">
+
+    <header id="header" class="inner"><div class="site-branding">
+  <h1 class="site-title">
+    <a href="/">len&#39;s blog</a>
+  </h1>
+  <p class="site-description">个人学习博客</p>
+</div>
+<nav id="site-navigation" class="main-navigation" role="navigation">
+  <ul>
+    
+      <li><a href="/">主页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+  </ul>
+</nav></header>
+
+    <article id="content" class="site-content">
+      <main id="main" class="site-main posts-loop" role="main">
+        <article class="post article">
+
+  
+  
+    <h3 class="article-title"><span>GCD学习：信号量</span></h3>
+  
+
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2016/04/01/GCD中的信号量/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-04-01T02:48:30.000Z">
+          2016-04-01
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>在GCD中有三个函数是semaphore的操作，分别是：<br>dispatch_semaphore_create　　　创建一个semaphore<br>dispatch_semaphore_signal　　　发送一个信号<br>dispatch_semaphore_wait　　　　等待信号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dispatch_semaphore_t sema = dispatch_semaphore_create(0); </span><br><span class="line">dispatch_semaphore_signal(sema); </span><br><span class="line">dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+        <div class="article-meta pull-left">
+          <span class="post-categories">
+            <i class="icon-categories"></i>
+            
+          </span>
+          <span class="post-tags">
+            <i class="icon-tags"></i>
+            
+          </span>
+        </div>
+        
+    </footer>
+  </div>
+</article>
+
+  
+
+      </main>
+    </article>
+
+    <footer id="colophon" class="site-footer" role="contentinfo"><div class="site-info">
+  <p class="meta">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2016 tang peng
+    
+  </p>
+</div></footer>
+    
+  </div>
+</div>
+</body>
+</html>
