@@ -27,25 +27,6 @@
         {
             "name":"乐视视频",
             "url":"https://www.le.com/"
-        }
-    ],
-    
-    "vlist": [
-        {
-            "name": "原地址",
-            "url": ""
-        },
-        {
-            "name": "线路1",
-            "url": "http://jx.618g.com/?url="
-        },
-        {
-            "name": "线路2",
-            "url": "http://vip.397wl.cn/?url="
-        },
-        {
-            "name": "线路3",
-            "url": "http://jx.618ge.com/?url="
         },
         {
             "name": "庆余年26",
@@ -131,5 +112,25 @@
             "name": "庆余年46",
             "url":"https://youku.cdn6-okzy.com/20191220/8314_0d8250df/1000k/hls/index.m3u8"
         }
+    ],
+    
+    "vlist": [
+        {
+            "name": "原地址",
+            "url": ""
+        },
+        {
+            "name": "线路1",
+            "url": "http://jx.618g.com/?url="
+        },
+        {
+            "name": "线路2",
+            "url": "http://vip.397wl.cn/?url="
+        },
+        {
+            "name": "线路3",
+            "url": "http://jx.618ge.com/?url="
+        },
+        
     ]
 }
