@@ -27,90 +27,6 @@
         {
             "name":"乐视视频",
             "url":"https://www.le.com/"
-        },
-        {
-            "name": "庆余年26",
-            "url": "https://youku.cdn4-okzy.com/20191211/3323_7a943d8f/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年27",
-            "url": "https://youku.cdn4-okzy.com/20191211/3321_c713f248/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年28",
-            "url": "https://bilibili.com-h-bilibili.com/20191216/10230_0ac6d878/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年29",
-            "url": "https://youku.com-iqiyi.net/20191216/22687_ac28360f/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年30",
-            "url": "https://youku.cdn4-okzy.com/20191216/3397_a71b720d/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年31",
-            "url": "https://youku.cdn4-okzy.com/20191216/3398_9e626e45/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年32",
-            "url": "https://youku.cdn4-okzy.com/20191216/3399_60cf4513/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年33",
-            "url": "https://youku.cdn4-okzy.com/20191216/3400_018830bb/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年34",
-            "url": "https://youku.cdn1-okzy.com/20191219/10651_d484578e/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年35",
-            "url": "https://youku.cdn1-okzy.com/20191219/10652_7d060176/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年36",
-            "url": "https://youku.cdn2-okzy.com/20191219/6505_009239ff/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年37",
-            "url": "https://youku.cdn2-okzy.com/20191219/6504_107c0620/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年38",
-            "url": "https://youku.cdn4-okzy.com/20191219/3450_c47f76f5/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年39",
-            "url": "https://youku.cdn4-okzy.com/20191219/3448_32063996/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年40",
-            "url": "https://youku.cdn7-okzy.com/20191220/16294_599ad0b2/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年41",
-            "url": "https://youku.cdn7-okzy.com/20191220/16292_aeb8f7d0/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年42",
-            "url": "https://iqiyi.com-ok-iqiyi.com/20191220/12010_ab818018/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年43",
-            "url": "https://iqiyi.com-ok-iqiyi.com/20191220/12009_c9a72fb0/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年44",
-            "url": "https://youku.cdn4-okzy.com/20191219/3447_2200a08f/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年45",
-            "url": "https://youku.cdn4-okzy.com/20191219/3449_a70e5a03/1000k/hls/index.m3u8"
-        },
-        {
-            "name": "庆余年46",
-            "url":"https://youku.cdn6-okzy.com/20191220/8314_0d8250df/1000k/hls/index.m3u8"
         }
     ],
     
@@ -129,8 +45,35 @@
         },
         {
             "name": "线路3",
-            "url": "http://jx.618ge.com/?url="
+            "url": "https://ys.ykmbbs.top/?v="
         },
-        
+        {
+            "name": "黑米免费解析",
+            "url": "https://www.myxin.top/jx/api/?url="
+        },
+        {
+            "name": "随缘免费解析",
+            "url": "http://www.syhbyl.tw/jx/api/?url="
+        },
+        {
+            "name": "206解析",
+            "url": "https://206dy.com/vip.php?url="
+        },
+        {
+            "name": "快快免费解析",
+            "url": "http://jx.kkqtv.com/jx/api/?url="
+        },
+        {
+            "name": "大仙解析",
+            "url": "https://vip.hackmg.com/jx/index.php?url="
+        },
+        {
+            "name": "流氓凡解析",
+            "url": "http://jx.wslmf.com/?url="
+        },
+        {
+            "name": "鑫梦解析",
+            "url": "http://api.52xmw.com/?url="
+        }
     ]
 }
