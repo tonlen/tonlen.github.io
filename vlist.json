@@ -74,6 +74,10 @@
         {
             "name": "鑫梦解析",
             "url": "http://api.52xmw.com/?url="
+        },
+        {
+            "name": "简傲云解析",
+            "url": "http://vip.jaoyun.com/?url="
         }
     ]
 }
